@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="easyvideoplayer-0.3.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/e0ef20b2933aea6c30f6a3c9643ebfe108da3254/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e0ef20b2933aea6c30f6a3c9643ebfe108da3254/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad/easyvideoplayer/0.3.0/55228e8ab847174dcf0d166b04577db4825def5e/easyvideoplayer-0.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

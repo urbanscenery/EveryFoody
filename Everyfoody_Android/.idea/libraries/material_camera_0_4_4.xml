@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="material-camera-0.4.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/dfce7fbcc4b8a490e54a229bd6f44c9695a05a41/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/dfce7fbcc4b8a490e54a229bd6f44c9695a05a41/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad/material-camera/0.4.4/ac4028adca0b7d97a963bc520b4689376605c43d/material-camera-0.4.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

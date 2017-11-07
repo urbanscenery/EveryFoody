@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_menu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/edit_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="메뉴정보 추가"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/menu_item_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/menu_item_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorEditMainImage">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/menu_item_edit_image"/>
+
+            <ImageView
+                android:id="@+id/menu_item_edit_image_picker"
+                android:layout_width="59dp"
+                android:layout_height="59dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/photo_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="293dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/edittext_base">
+
+            <EditText
+                android:maxLength="25"
+                android:id="@+id/menu_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:background="@null"
+                android:hint="메뉴이름"
+                android:textColorHint="@color/colorEditTextHint"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="293dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/edittext_base">
+
+            <EditText
+                android:inputType="number"
+                android:maxLength="7"
+                android:id="@+id/menu_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:background="@null"
+                android:hint="메뉴가격"
+                android:textColorHint="@color/colorEditTextHint"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="318dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/notification_background"
+        android:elevation="3dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/noti_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="채은이네 푸드트럭 예약 완료!" />
+
+        <TextView
+            android:id="@+id/noti_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp"
+            tools:text="3분 전" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

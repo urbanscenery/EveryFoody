@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/menu_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            tools:text="채소큐브스테이크"/>
+        
+        <TextView
+            android:id="@+id/menu_price"
+            android:layout_alignTop="@+id/menu_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="46dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccentText"
+            android:textSize="14sp"
+            tools:text="6500원"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

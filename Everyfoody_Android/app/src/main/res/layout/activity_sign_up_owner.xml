@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="dct.com.everyfoody.ui.signup.owner.SignUpOwnerActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/food_icon_2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/foodtruck_2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/logo_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="사업자 회원가입"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/kakao_owner_signup_btn"
+            android:layout_width="293dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/kakao_button"
+            android:text="카카오톡 회원가입"
+            android:textColor="@color/colorAccentText" />
+
+        <Button
+            android:id="@+id/facebook_owner_signup_btn"
+            android:layout_width="293dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/kakao_button"
+            android:text="페이스북 회원가입"
+            android:textColor="@color/colorAccentText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="dct.com.everyfoody.ui.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splash_background"
+        android:layout_marginTop="112dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_2"/>
+
+    <ImageView
+        android:layout_marginTop="17dp"
+        android:layout_below="@id/splash_background"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_1"/>
+
+    <ImageView
+        android:id="@+id/food_icon"
+        android:layout_marginTop="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/splash_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/food_icon"/>
+
+    <ImageView
+        android:id="@+id/truck_image"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/food_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/foodtruck"/>
+
+
+
+</RelativeLayout>

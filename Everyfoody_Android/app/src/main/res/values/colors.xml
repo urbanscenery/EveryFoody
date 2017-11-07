@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#f0f0f0</color>
+    <color name="colorAccent">#ff6e00</color>
+    <color name="colorAccentText">#848484</color>
+
+    <!-- owner_page_edit -->
+
+    <color name="colorDefaultText">#c4c4c4</color>
+    <color name="colorDefaultBackground">#ededed</color>
+    <color name="colorEditTextHint">#898989</color>
+
+    <color name="colorComment">#ffe2cc</color>
+    <color name="colorBoderColor">#9b9b9b</color>
+    <color name="colorEditMainImage">#4c000000</color>
+
+    <color name="colorStatusIcon">#424242</color>
+</resources>

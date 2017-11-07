@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="26dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/push_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/colorAccentText"
+            android:textSize="13sp"
+            tools:text="채은이네 푸드트럭"
+
+            />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/push_item_switch"
+            style="@style/pushSwitch"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:checked="false" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

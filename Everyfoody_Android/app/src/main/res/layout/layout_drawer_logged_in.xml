@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="248dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:background="@null"
+        app:civ_border_color="#26000000"
+        app:civ_border_width="2dp"
+        android:src="@drawable/profile" />
+
+    <RelativeLayout
+        android:layout_marginTop="56dp"
+        android:id="@+id/user_default_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="81dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="남채은" />
+
+        <RelativeLayout
+            android:id="@+id/login_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginTop="18dp">
+
+            <View
+                android:id="@+id/divider_line1"
+                android:layout_width="198dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/order_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_below="@+id/divider_line1"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:text="예약내역" />
+
+            <TextView
+                android:id="@+id/order_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="45sp"
+                android:layout_marginTop="34dp"
+                android:text="0"
+                android:layout_toLeftOf="@+id/bookmark_count"
+                android:layout_toStartOf="@+id/bookmark_count" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/divider_line1"
+                android:layout_marginRight="53dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:text="즐겨찾기" />
+
+            <TextView
+                android:id="@+id/bookmark_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/divider_line1"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="64dp"
+                android:layout_marginTop="34dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="45sp"
+                android:text="0" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/user_default_info_container">
+
+        <TextView
+            android:id="@+id/push_alarm_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:text="즐겨찾기 푸시알람" />
+
+        <View
+            android:id="@+id/divider_line2"
+            android:layout_width="198dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/push_alarm_list_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <Button
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="로그아웃"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_setting_rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/logout_btn"
+            android:layout_below="@id/divider_line2"
+            android:layout_marginTop="15dp"
+            tools:listitem="@layout/layout_push_list_rcv_item" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/profile_edit_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginLeft="157dp"
+        android:src="@drawable/profile_edit"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>

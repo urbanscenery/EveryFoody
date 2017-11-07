@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="dct.com.everyfoody.ui.home.owner.register.TruckRegisterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/truck_register_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="내 가게 등록"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/textbox2"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center_horizontal"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="6sp"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="가게 등록은 사업자등록증 확인 후 진행됩니다.\n또한 세부적인 가게정보 입력은 가게등록 후 가능합니다." />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/foodtruck_2" />
+
+    <EditText
+        android:id="@+id/edit_truck_name"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edittext_base"
+        android:gravity="center_vertical"
+        android:hint="가게 이름"
+        android:paddingLeft="23dp"
+        android:singleLine="true"
+        android:textColor="@color/colorAccentText"
+        android:textColorHint="@color/colorAccentText"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/register_license"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/edittext_base"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="23dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="사업자등록증 첨부"
+            android:textColor="@color/colorAccentText"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/check_license"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/ic_action_name"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

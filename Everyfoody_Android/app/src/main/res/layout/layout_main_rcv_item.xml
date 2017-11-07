@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:layout_width="310dp"
+    android:layout_height="130dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/main_list_item_image"
+        android:layout_width="310dp"
+        android:layout_height="130dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"></FrameLayout>
+
+    <FrameLayout
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_right_oval"></FrameLayout>
+
+    <FrameLayout
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_left_oval"></FrameLayout>
+
+    <TextView
+        android:id="@+id/food_truck_name"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        tools:text = "채은이네 스테이크"/>
+
+
+    <TextView
+        android:id="@+id/food_truck_distance"
+        android:layout_marginTop="106dp"
+        android:layout_marginLeft="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        tools:text = "약 300m"/>
+    <TextView
+        android:id="@+id/food_truck_booker_count"
+        android:layout_marginTop="106dp"
+        android:layout_marginLeft="225dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        tools:text = "대기인원 8명"/>
+
+
+
+
+
+</RelativeLayout>

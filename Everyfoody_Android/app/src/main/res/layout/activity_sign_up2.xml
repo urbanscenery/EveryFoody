@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="dct.com.everyfoody.ui.signup.SignUp2Activity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:src="@drawable/food_icon_3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/foodtruck_2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/logo_1" />
+
+    <TextView
+        android:id="@+id/signup_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="이용자 회원가입"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/signup_name_edit"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/sigu_up_edit"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:textColor="@color/colorAccentText"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        android:hint="             본인의 실명을 입력해주세요."/>
+
+    <EditText
+        android:inputType="phone"
+        android:maxLength="13"
+        android:singleLine="true"
+        android:id="@+id/signup_phone_edit"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/sigu_up_edit"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:textColor="@color/colorAccentText"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        android:hint="          본인의 전화번호를 입력해주세요."/>
+
+    <LinearLayout
+        android:id="@+id/signup_btn"
+        android:layout_marginTop="47dp"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="회원가입"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

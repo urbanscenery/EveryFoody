@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/owner_page_edit_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/store_main_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/colorDefaultBackground">
+
+        <TextView
+            android:id="@+id/store_main_name"
+            android:layout_width="88dp"
+            android:layout_height="19dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textSize="16sp"
+            android:text="가게 대표 사진"
+            android:textColor="@color/colorDefaultText" />
+
+        <ImageView
+            android:id="@+id/store_main_image"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_below="@+id/store_main_name"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/photo" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/normal_info_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/detail_info_selected"
+                android:paddingBottom="3dp"
+                android:text="기본정보"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/menu_info_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_toRightOf="@+id/normal_info_btn"
+                android:background="@drawable/detail_info_unselected"
+                android:text="메뉴정보"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line2" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_edit_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

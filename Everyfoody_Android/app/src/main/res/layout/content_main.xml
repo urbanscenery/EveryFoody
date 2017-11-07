@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nested_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dct.com.everyfoody.ui.home.user.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/map_clip_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:tag="area4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="177dp"
+                android:layout_marginTop="21dp"
+                android:src="@drawable/area1" />
+
+            <TextView
+                android:tag="4"
+                android:id="@+id/area1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="도봉 강북\n성북 노원"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2" />
+
+            <ImageView
+                android:tag="area5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="95dp"
+                android:src="@drawable/area2" />
+
+            <TextView
+                android:tag="5"
+                android:id="@+id/area2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="216dp"
+                android:layout_marginTop="129dp"
+                android:text="동대문 중랑\n 성동 광진"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:tag="area2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="54dp"
+                android:src="@drawable/area7"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:tag="2"
+                android:id="@+id/area7_name"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="129dp"
+                android:layout_marginTop="96dp"
+                android:text=" 은평\n 마포\n서대문"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:tag="area3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="153dp"
+                android:layout_marginTop="82dp"
+                android:src="@drawable/area8_click"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:tag="3"
+                android:id="@+id/area8_name"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="121dp"
+                android:text="종로\n중구\n용산"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:tag="area1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/area6"
+                android:layout_alignBottom="@+id/area4_name"
+                android:layout_alignRight="@+id/area7_name"
+                android:layout_alignEnd="@+id/area7_name" />
+
+            <TextView
+                android:tag="1"
+                android:id="@+id/area6_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="159dp"
+                android:text=" 강서 양천\n영등포 구로"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:tag="area6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="111dp"
+                android:layout_marginTop="182dp"
+                android:src="@drawable/area5" />
+
+            <TextView
+                android:tag="6"
+                android:id="@+id/area5_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="132dp"
+                android:layout_marginTop="200dp"
+                android:text="동작 관악\n    금천"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:tag="area7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="186.8dp"
+                android:layout_marginTop="169.8dp"
+                android:src="@drawable/area4" />
+
+            <TextView
+                android:tag="7"
+                android:id="@+id/area4_name"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginLeft="201dp"
+                android:layout_marginTop="199dp"
+                android:text="서초 강남"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:tag="area8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="246dp"
+                android:layout_marginTop="124dp"
+                android:src="@drawable/area3" />
+
+            <TextView
+                android:tag="8"
+                android:id="@+id/area3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="267dp"
+                android:layout_marginTop="165dp"
+                android:text="강동\n송파"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="12dp"
+            >
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/location_icon"
+                android:id="@+id/selected_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서울시 마포구"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/my_location"
+                android:layout_marginRight="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_location2"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_rcv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/layout_main_rcv_item"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

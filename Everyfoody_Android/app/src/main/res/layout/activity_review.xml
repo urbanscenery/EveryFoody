@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.detail.review.ReviewActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/review_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="후기"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/review_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="32dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/review_rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            tools:listitem="@layout/layout_review_rcv_item">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/warning_layout"
+        layout="@layout/layout_non_data_warning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/selected_image_preview"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/comment_item"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/comment_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorComment"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <ImageView
+            android:id="@+id/comment_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="2dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/camera" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary">
+
+
+            <EditText
+                android:id="@+id/comment_edit"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="5"
+                android:paddingLeft="2dp"
+                android:paddingTop="6dp"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/comment_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/comment_background"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="등록"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

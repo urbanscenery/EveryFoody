@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="tedbottompicker-1.0.12">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/3155a76dbe9410ad2fc13c6415070c9e77c42d3e/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3155a76dbe9410ad2fc13c6415070c9e77c42d3e/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gun0912.ted/tedbottompicker/1.0.12/89b3946a73708a5f300f2e34221a878408dec971/tedbottompicker-1.0.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

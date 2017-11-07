@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "598249210007",
+    "firebase_url": "https://everyfoody-1507142755647.firebaseio.com",
+    "project_id": "everyfoody-1507142755647",
+    "storage_bucket": "everyfoody-1507142755647.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598249210007:android:ddd5ef4905f2502b",
+        "android_client_info": {
+          "package_name": "dct.com.everyfoody"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598249210007-dhkvtf3voi6p110vknji0hkcrvd93djg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dct.com.everyfoody",
+            "certificate_hash": "d1520c495bba66fe4b4183fe2bd7ac766d379ae6"
+          }
+        },
+        {
+          "client_id": "598249210007-l0gfpuaa7c8lcehv42e9384evfnpkb15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWAUWMkX6FV0zF6qvbOTSbxQ1LOzWPm3Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598249210007-l0gfpuaa7c8lcehv42e9384evfnpkb15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

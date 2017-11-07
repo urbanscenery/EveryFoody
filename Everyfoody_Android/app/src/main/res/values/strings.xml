@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">에브리푸디</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="kakao_app_key"></string>
+    <string name="title_activity_reserve_cancel">ReserveCancelActivity</string>
+
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
+
+    <string name="network_success">success</string>
+</resources>

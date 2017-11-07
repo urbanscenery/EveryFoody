@@ -1,0 +1,197 @@
+{
+  "swagger": "2.0",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "host": "host IP",
+  "basePath": "/",
+  "info":
+  {
+    "description": "Description <!-- ReDoc-Inject: <security-definitions> -->\n",
+    "version": "1.0.0",
+    "title": "Title at here",
+    "x-logo":
+    {
+      "url": "logo url at here"
+    }
+  },
+  "tags": [
+  {
+    "name": "example",
+    "description": "example API"
+  }],
+  "x-tagGroups": [
+  {
+    "name": "example",
+    "tags": [
+      "example"
+    ]
+  }],
+  "securityDefinitions":
+  {
+    "petstore_auth":
+    {
+      "description": "Get access to data while protecting your account credentials.\nOAuth2 is also a safer and more secure way to give you access.\n",
+      "type": "oauth2",
+      "authorizationUrl": "http://petstore.swagger.io/api/oauth/dialog",
+      "flow": "implicit",
+      "scopes":
+      {
+        "write:pets": "modify pets in your account",
+        "read:pets": "read your pets"
+      }
+    },
+    "api_key":
+    {
+      "description": "For this sample, you can use the api key `special-key` to test the authorization filters.\n",
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    }
+  },
+  "paths":
+  {
+    "/signin":
+    {
+      "post":
+      {
+        "tags": [
+          "example"
+        ],
+        "summary": "API reference 예제",
+        "description": "example API",
+        "operationId": "exam",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+        {
+          "in": "body",
+          "name": "body",
+          "description": "유저 로그인을 하기 위한 email, uid, category 전달",
+          "required": true,
+          "schema":
+          {
+            "type": "object",
+            "properties":
+            {
+              "email":
+              {
+                "description": "페이스북 or 카카오톡 id",
+                "type": "string",
+                "minLength": 1,
+                "example": "everyfoody@gmail.com"
+              },
+              "uid":
+              {
+                "description": "발급된 uid",
+                "type": "string",
+                "minLength": 1,
+                "example": "10985781390487"
+              },
+              "category":
+              {
+                "description": "Facebook/Kakao 구분, Facebook : 101 Kakao : 102",
+                "type": "integer",
+                "minLength": 1,
+                "example": 101
+              }
+            }
+          }
+        }],
+        "responses":
+        {
+          "201":
+          {
+            "description": "로그인 성공",
+            "schema":
+            {
+              "type": "object",
+              "properties":
+              {
+                "status":
+                {
+                  "type": "string",
+                  "description": "성공 알림",
+                  "example": "success"
+                },
+                "data":
+                {
+                  "type": "object",
+                  "properties":
+                  {
+                    "token":
+                    {
+                      "description": "발급된 JWT토큰",
+                      "type": "string",
+                      "example": "10cz90u3tbn10udfhbfk1j3rbkdf9df"
+                    },
+                    "name":
+                    {
+                      "description": "이용자가 등록한 이름",
+                      "type": "string",
+                      "example": "김연태"
+                    },
+                    "category":
+                    {
+                      "description": "이용자/사업자 구분, 이용자 : 401 사업자 : 402(영업승인완료), 403(영업승인대기), 404(승인기간만료)",
+                      "type": "integer",
+                      "example": 401
+                    },
+                    "imageURL":
+                    {
+                      "description": "사용자의 프로필이미지 URL",
+                      "type": "string",
+                      "example": "image url"
+                    }
+                  }
+
+                },
+                "msg":
+                {
+                  "type": "string",
+                  "description": "로그인 성공 알림메세지",
+                  "example": "successful customer facebook login"
+                }
+              }
+            }
+          },
+          "405":
+          {
+            "description": "unregistrated ID",
+            "schema":
+            {
+              "$ref": "#/definitions/failMessage"
+            }
+          }
+        }
+      }
+    }
+
+  },
+  "definitions":
+  {
+    "failMessage":
+    {
+      "type": "object",
+      "properties":
+      {
+        "status":
+        {
+          "type": "string",
+          "example": "fail"
+        },
+        "message":
+        {
+          "type": "string",
+          "example": "fail reason"
+        }
+      }
+    }
+  }
+}

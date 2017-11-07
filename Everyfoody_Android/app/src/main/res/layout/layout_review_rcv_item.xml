@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/notification_background"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/review_writer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/colorAccentText"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="김준영" />
+
+        <RatingBar
+            android:id="@+id/review_rating"
+            style="@style/customRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/review_writer_name"
+            android:layout_marginRight="20dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/review_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/review_rating"
+            android:layout_below="@+id/review_rating"
+            android:layout_marginTop="6dp"
+            tools:text="친절하고 맛있어요" />
+
+        <ImageView
+            android:id="@+id/review_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/review_writer_name"
+            android:layout_alignRight="@+id/review_rating"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="67dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_detail_map"
+        android:icon="@drawable/map"
+        android:orderInCategory="100"
+        android:title="지도"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_detail_bookmark_off"
+        android:orderInCategory="100"
+        android:icon="@drawable/bookmark_off"
+        android:title="즐겨찾기"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_detail_bookmark_on"
+        android:orderInCategory="100"
+        android:icon="@drawable/bookmark_on"
+        android:title="즐겨찾기"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_detail_edit"
+        android:orderInCategory="100"
+        android:title="수정"
+        app:showAsAction="always" />
+
+
+</menu>
